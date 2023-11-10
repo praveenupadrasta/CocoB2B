@@ -1,0 +1,7 @@
+{
+  "name": "CocoB2B",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
