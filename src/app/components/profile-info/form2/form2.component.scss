@@ -1,0 +1,97 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* Use a stack that suits your design */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light grey background */
+  }
+  
+  .container {
+    max-width: 600px; /* Maximum width of the form container */
+    margin: 0 auto; /* Center the form */
+    padding: 1rem;
+  }
+  
+  .form1 {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form1 ion-item {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .form1 ion-label {
+    margin-bottom: 8px;
+  }
+  
+  .form1 ion-input,
+  .form1 ion-select {
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button styles */
+  .form1 .button {
+    width: 100%;
+    border: none;
+    border-radius: 0.5px;
+    cursor: pointer;
+  }
+
+  ion-button.back-btn {
+    --color: var(--ion-color-primary);
+    --background: var(--ion-color-secondary);
+    --background-activated: var(--ion-color-secondary-shade);
+  }
+
+  /* Responsive typography */
+  html {
+    font-size: 100%; /* Default to 16px */
+  }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 90%; /* Reduce base font-size on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 80%; /* Further reduce base font-size on very small screens */
+    }
+  
+    .container {
+      padding: 0.5rem;
+    }
+  
+    .form1 {
+      padding: 1rem;
+    }
+  
+    .form1 ion-item {
+      margin-bottom: 0.5rem;
+    }
+  
+    .form1 ion-input,
+    .form1 ion-select {
+      padding: 0.5rem;
+    }
+  }
+  
+  /* Utility classes for margin and padding */
+  .mt-1 { margin-top: 1rem; }
+  .mb-1 { margin-bottom: 1rem; }
+  .pt-1 { padding-top: 1rem; }
+  .pb-1 { padding-bottom: 1rem; }
+  
+  /* You can add more utility classes as needed */
+  

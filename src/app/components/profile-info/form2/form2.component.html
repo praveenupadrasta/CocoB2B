@@ -1,0 +1,30 @@
+<div class="container">
+  <form class="form1">
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Organization Name *</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">GST Number *</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Full Name *</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">State *</ion-label>
+      <ion-select placeholder="Select State/UT" interface="popover" required>
+        <!-- Add your options here -->
+      </ion-select>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">City *</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-button expand="block" class="ion-margin-top back-btn" 
+                              (click)="toPrevStep()">Back</ion-button>
+    <ion-button expand="block" class="ion-margin-top" 
+                              (click)="toNextStep()">Continue</ion-button>
+  </form>
+</div>

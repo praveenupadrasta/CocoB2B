@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profile Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile Info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div [ngSwitch]="profileInfo['step']">
+    <profile-info-form1 *ngSwitchCase="1" (nextStep)="toForm2($event)"></profile-info-form1>
+    <profile-info-form2 *ngSwitchCase="2" (nextStep)="toForm3($event)"
+                                          (prevStep)="toForm1()"></profile-info-form2>
+  </div>
+</ion-content>

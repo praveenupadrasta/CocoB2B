@@ -1,0 +1,26 @@
+ion-card {
+    margin-top: 20px; /* Adjust as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to match your image */
+  }
+  
+  ion-item {
+    --background: #FFFFFF; /* White background for the items */
+    --border-radius: 8px; /* Rounded corners for the items */
+    --padding-start: 20px; /* Padding inside the item */
+    --padding-end: 20px; /* Padding inside the item */
+    --min-height: 50px; /* Minimum height for the items */
+  }
+  
+  ion-button {
+    --background: var(--ion-color-primary); /* Red background for the button */
+    --border-radius: 20px; /* Rounded corners for the button */
+    --padding-vertical: 10px; /* Vertical padding for the button */
+    --padding-horizontal: 20px; /* Horizontal padding for the button */
+    --height: 50px; /* Height of the button */
+  }
+  
+  /* If the checkmark doesn't show up, add this */
+  ion-icon {
+    --color: #28ba62; /* Color for the checkmark icon */
+  }
+  
